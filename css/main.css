@@ -75,6 +75,7 @@ html[dir=ltr] .outscreen {
 }
 body {
   font-family: Frutiger;
+  overflow: hidden;
 }
 body::-webkit-scrollbar {
   background-color: rgba(83, 83, 83, 0.2);
@@ -91,7 +92,7 @@ body::-webkit-scrollbar-thumb:hover {
 html {
   scrollbar-width: thin;
   scrollbar-color: rgba(16, 93, 163, 0.75) rgba(83, 83, 83, 0.2);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -180,6 +181,11 @@ html {
   top: 0;
   width: 30%;
   z-index: 9999999;
+}
+@media (max-width: 767px) {
+  .loader {
+    width: 100%;
+  }
 }
 .loader svg {
   left: 0;

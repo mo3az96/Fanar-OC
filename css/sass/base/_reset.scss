@@ -1,5 +1,6 @@
 body {
     font-family: Frutiger;
+    overflow: hidden;
 
     &::-webkit-scrollbar {
         background-color: rgba(#535353, 0.2);
@@ -19,7 +20,7 @@ body {
 html {
     scrollbar-width: thin;
     scrollbar-color: rgba($seccolor, 0.75) rgba(#535353, 0.2);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container {
@@ -123,6 +124,10 @@ html {
     top: 0;
     width: 30%;
     z-index: 9999999;
+
+    @media (max-width:767px) {
+        width: 100%;
+    }
 
     svg {
         left: 0;

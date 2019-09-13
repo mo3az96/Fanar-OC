@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".loader").fadeOut(1000, function () {
         $(this).parent().hide();
-        $('body').css("overflow-y", "auto");
+        $('html, body').css("overflow", "auto");
         $('html, body').animate({
             scrollTop: 0
         }, 1);
