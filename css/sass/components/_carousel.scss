@@ -346,6 +346,47 @@
     }
 }
 
+html[dir="ltr"] .product {
+
+
+    .item-img {
+
+        .overlay-btn {
+            &.add-cart-btn {
+                transform: translateX(-70px) rotate(360deg);
+            }
+
+            &.add-fav-btn {
+                transform: translateX(70px) rotate(360deg);
+            }
+        }
+    }
+
+    &:hover {
+        .item-img {
+            .overlay-btn {
+
+                &.add-cart-btn {
+                    transform: translateX(0) rotate(-360deg);
+                }
+
+                &.add-fav-btn {
+                    transform: translateX(0) rotate(-360deg);
+                }
+            }
+
+        }
+    }
+
+    .price {
+
+        .old {
+            margin-left: 0;
+            margin-right: 9px;
+        }
+    }
+}
+
 .cats-slider {
     .owl-dots {
         display: flex;

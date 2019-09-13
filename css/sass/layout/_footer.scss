@@ -117,6 +117,11 @@
     }
 }
 
+html[dir="ltr"] .news-btn {
+    right: 7px;
+    left: auto;
+}
+
 .copyrights {
     min-height: 48px;
     margin-top: 76px;
@@ -152,6 +157,19 @@
 
         img {
             margin-right: 6px;
+        }
+    }
+}
+
+html[dir="ltr"] .copyright {
+
+    .tasawk {
+        margin-right: 0;
+        margin-left: 6px;
+
+        img {
+            margin-right: 0;
+            margin-left: 6px;
         }
     }
 }

@@ -24,8 +24,16 @@
     }
 }
 
+html[dir="ltr"] .navlink {
+    font-size: 15px;
+
+    @media (max-width:991px) {
+        font-size: 17px;
+    }
+}
+
 .navlink-li {
-    margin-left: 23px;
+    margin-left: 20px;
 
     &:last-child {
         margin-left: 0;
@@ -34,6 +42,21 @@
     @media (max-width:991px) {
         margin-left: 0;
         margin-bottom: 12px;
+    }
+}
+
+html[dir="ltr"] .navlink-li {
+    margin-right: 23px;
+    margin-left: 0;
+
+    &:last-child {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @media (max-width:991px) {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 

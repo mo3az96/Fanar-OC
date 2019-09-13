@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    // $(".loader").fadeOut(1000, function () {
-    //     $(this).parent().hide();
-    //     $('body').css("overflow-y", "auto");
-    //     $('html, body').animate({
-    //         scrollTop: 0
-    //     }, 1);
-    // });
+    $(".loader").fadeOut(1000, function () {
+        $(this).parent().hide();
+        $('body').css("overflow-y", "auto");
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1);
+    });
     // Mobile Side Menu 
     $('.menu-btn').click(function () {
         $('.xs-nav').show();
