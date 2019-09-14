@@ -13,6 +13,7 @@
 
     @media (max-width:1199px) {
         align-items: center;
+        flex-direction: row;
     }
 
     @media (max-width:991px) {
@@ -89,6 +90,7 @@ html[dir="ltr"] .logo {
         width: 100%;
         order: 2;
         justify-content: center;
+        margin-bottom: 0;
     }
 }
 
@@ -100,6 +102,7 @@ html[dir="ltr"] .logo {
 
     @media (max-width:991px) {
         margin: 0;
+        flex-direction: column;
     }
 }
 
@@ -138,6 +141,8 @@ html[dir="ltr"] .mo-user-nav {
 
         @media (max-width:991px) {
             display: flex;
+            margin: 0;
+            order: 3;
         }
     }
 
@@ -156,7 +161,12 @@ html[dir="ltr"] .mo-user-nav {
 
         @media (max-width:991px) {
             display: flex;
+            order: 2;
         }
+    }
+
+    @media (max-width:991px) {
+        margin-bottom: 8px;
     }
 
     &.search-icon {
@@ -169,6 +179,11 @@ html[dir="ltr"] .mo-user-nav {
             border: 1px solid transparent;
             color: $seccolor;
             background-color: #fff;
+        }
+
+        @media (max-width:991px) {
+            margin-bottom: 0;
+            order: 4;
         }
     }
 
@@ -188,6 +203,12 @@ html[dir="ltr"] .mo-user-nav {
             .items {
                 animation: vibe 0.7s
             }
+        }
+
+        @media (max-width:991px) {
+            margin-right: 0;
+            margin-left: 0;
+            order: 1;
         }
     }
 
@@ -211,5 +232,10 @@ html[dir="ltr"] .user-anchor {
     &.mo-cart-icon {
         margin-right: 0;
         margin-left: 8px;
+
+        @media (max-width:991px) {
+            margin-right: 0;
+            margin-left: 0;
+        }
     }
 }

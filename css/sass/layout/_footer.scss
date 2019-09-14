@@ -44,7 +44,7 @@
 .foot-nav-links-header {
     @media (max-width:767px) {
         margin-bottom: 12px;
-        margin-top: 12px;
+        margin-top: 20px;
     }
 }
 
@@ -150,6 +150,7 @@ html[dir="ltr"] .news-btn {
         justify-content: center;
         order: 2;
         margin-top: 10px;
+        text-align: center;
     }
 
     .tasawk {

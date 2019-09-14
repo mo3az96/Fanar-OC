@@ -173,9 +173,19 @@ html[dir="ltr"] .search {
     background-color: #1e6fb9;
     @include transition(all 0.3s ease-in-out);
 
+    @media (max-width:991px) {
+        border: 2px solid #d2d2d2;
+        color: #a0a0a0;
+        background-color: #fff;
+    }
+
     &::placeholder {
         font-size: 14px;
         color: #84baea;
+
+        @media (max-width:991px) {
+            color: #a0a0a0;
+        }
     }
 
     &:focus {
@@ -196,6 +206,16 @@ html[dir="ltr"] .search {
     background-color: transparent;
     @include transition(all 0.3s ease-in-out);
 
+    @media (max-width:991px) {
+        width: 35px;
+        height: 35px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        left: 5px;
+        background-color: $maincolor;
+    }
+
     &:hover {
         color: $maincolor
     }
@@ -204,6 +224,11 @@ html[dir="ltr"] .search {
 html[dir="ltr"] .searchbtn {
     right: 25px;
     left: auto;
+
+    @media (max-width:991px) {
+        right: 5px;
+        left: auto;
+    }
 }
 
 .search-pop {
@@ -211,7 +236,7 @@ html[dir="ltr"] .searchbtn {
     position: absolute;
     height: 100px;
     background-color: #fff;
-    bottom: 10px;
+    bottom: 0;
     left: 0;
     transform: translateY(100%);
     z-index: 6;
@@ -227,24 +252,24 @@ html[dir="ltr"] .searchbtn {
         border-style: solid;
         top: -30px;
         position: absolute;
-        right: 53.5%;
+        left: 17%;
         transform: translateX(50%);
         z-index: 6;
 
         @media (max-width:480px) {
-            right: 56.5%;
+            left: 17%;
         }
     }
 }
 
 html[dir="ltr"] .search-pop {
     &:before {
-        right: auto;
-        left: 49.5%;
+        right: 17%;
+        left: auto;
 
         @media (max-width:480px) {
-            left: 48.5%;
-            right: auto;
+            right: 17%;
+            left: auto;
         }
     }
 }
