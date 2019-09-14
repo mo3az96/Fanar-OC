@@ -804,7 +804,7 @@ html[dir=ltr] .product .price .old {
   transition: all 0.3s ease-in-out;
 }
 .cat .cat-img:hover img {
-  transform: scale(1.1) rotate(-5deg);
+  transform: scale(1.1);
 }
 .cat .cat-name {
   font-size: 18px;
@@ -1179,7 +1179,7 @@ html[dir=ltr] .user-anchor.mo-cart-icon {
   transition: all 0.3s ease-in-out;
 }
 .foot-link:hover {
-  color: #9ec43b;
+  color: #fff;
 }
 
 .newsletter-info {
