@@ -35,8 +35,8 @@ $(document).ready(function () {
     $('.open-search').click(function () {
         $(this).css("display", "none");
         $('.close-search').css("display", "flex");
+        $('.search-overlay').show();
         if ($(window).width() > 991) {
-            $('.search-overlay').show();
             $('.nav-links').fadeOut(500);
             $('.search').addClass("searchin");
             $('.search').removeClass("searchout");
@@ -47,8 +47,8 @@ $(document).ready(function () {
     $('.close-search').click(function () {
         $(this).css("display", "none");
         $('.open-search').css("display", "flex");
+        $('.search-overlay').hide();
         if ($(window).width() > 991) {
-            $('.search-overlay').hide();
             $('.nav-links').fadeIn(500);
             $('.search').removeClass("searchin");
             $('.search').addClass("searchout");
@@ -59,8 +59,8 @@ $(document).ready(function () {
     $('.search-overlay').click(function () {
         $('.close-search').css("display", "none");
         $('.open-search').css("display", "flex");
+        $('.search-overlay').hide();
         if ($(window).width() > 991) {
-            $('.search-overlay').hide();
             $('.nav-links').fadeIn(500);
             $('.search').removeClass("searchin");
             $('.search').addClass("searchout");
