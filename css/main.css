@@ -940,7 +940,6 @@ html[dir=ltr] .logo {
   margin-top: 44px;
   margin-bottom: 19px;
   overflow-x: hidden;
-  z-index: 7;
 }
 @media (max-width: 1199px) {
   .sec-bar {
@@ -1504,6 +1503,7 @@ html[dir=ltr] .searchbtn {
   position: absolute;
   right: 53.5%;
   transform: translateX(50%);
+  z-index: 6;
 }
 @media (max-width: 480px) {
   .search-pop:before {

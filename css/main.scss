@@ -229,6 +229,7 @@ html[dir="ltr"] .searchbtn {
         position: absolute;
         right: 53.5%;
         transform: translateX(50%);
+        z-index: 6;
 
         @media (max-width:480px) {
             right: 56.5%;
