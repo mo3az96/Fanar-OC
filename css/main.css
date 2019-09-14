@@ -1004,7 +1004,7 @@ html[dir=ltr] .mo-user-nav {
 @media (max-width: 991px) {
   .user-anchor.mo-user {
     display: flex;
-    margin: 0;
+    margin-bottom: 8px;
     order: 3;
   }
 }
@@ -1561,13 +1561,13 @@ html[dir=ltr] .searchbtn {
   border-style: solid;
   top: -30px;
   position: absolute;
-  left: 17%;
+  left: 8.5%;
   transform: translateX(50%);
   z-index: 6;
 }
 @media (max-width: 480px) {
   .search-pop:before {
-    left: 17%;
+    left: 8.5%;
   }
 }
 
