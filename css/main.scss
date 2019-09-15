@@ -249,7 +249,7 @@ html[dir="ltr"] .search {
     transform: translateY(-50%);
     border-radius: 50%;
     left: 5px;
-    background-color: $maincolor;
+    background-color: $seccolor;
     font-size: 16px;
     color: #fff;
     @include transition(all 0.3s ease-in-out);
@@ -260,21 +260,21 @@ html[dir="ltr"] .search {
         top: 50%;
         transform: translateY(-50%);
         border-radius: 50%;
-        left: 5px;
-        background-color: $maincolor;
+        left: 6px;
+        background-color: $seccolor;
     }
 
     &:hover {
-        background-color: $seccolor;
+        background-color: $maincolor;
     }
 }
 
 html[dir="ltr"] .searchbtn {
-    right: 25px;
+    right: 6px;
     left: auto;
 
     @media (max-width:991px) {
-        right: 5px;
+        right: 6px;
         left: auto;
     }
 }

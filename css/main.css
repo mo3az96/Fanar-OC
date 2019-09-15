@@ -894,6 +894,7 @@ html[dir=ltr] .moaccordion:after {
     padding-top: 0;
     order: 2;
     width: 175px;
+    margin-top: 10px;
   }
   .logo img {
     max-width: 100%;
@@ -945,7 +946,6 @@ html[dir=ltr] .logo {
   justify-content: flex-end;
   margin-top: 44px;
   margin-bottom: 19px;
-  overflow-x: hidden;
 }
 @media (max-width: 1199px) {
   .sec-bar {
@@ -990,9 +990,9 @@ html[dir=ltr] .mo-user-nav {
 }
 .user-anchor.mo-user {
   display: none;
-  border: 1px solid transparent;
-  color: #105da3;
-  background-color: #fff;
+  border: 1px solid #4587c4;
+  color: #fff;
+  background-color: transparent;
   position: relative;
   margin: 0 8px;
   -moz-transition: all 0.3s ease-in-out;
@@ -1001,9 +1001,9 @@ html[dir=ltr] .mo-user-nav {
   transition: all 0.3s ease-in-out;
 }
 .user-anchor.mo-user:hover {
-  border: 1px solid #4587c4;
-  color: #fff;
-  background-color: transparent;
+  border: 1px solid transparent;
+  color: #105da3;
+  background-color: #fff;
 }
 @media (max-width: 991px) {
   .user-anchor.mo-user {
@@ -1547,7 +1547,7 @@ html[dir=ltr] .search:before {
   transform: translateY(-50%);
   border-radius: 50%;
   left: 5px;
-  background-color: #9ec43b;
+  background-color: #105da3;
   font-size: 16px;
   color: #fff;
   -moz-transition: all 0.3s ease-in-out;
@@ -1562,21 +1562,21 @@ html[dir=ltr] .search:before {
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
-    left: 5px;
-    background-color: #9ec43b;
+    left: 6px;
+    background-color: #105da3;
   }
 }
 .searchbtn:hover {
-  background-color: #105da3;
+  background-color: #9ec43b;
 }
 
 html[dir=ltr] .searchbtn {
-  right: 25px;
+  right: 6px;
   left: auto;
 }
 @media (max-width: 991px) {
   html[dir=ltr] .searchbtn {
-    right: 5px;
+    right: 6px;
     left: auto;
   }
 }

@@ -36,6 +36,7 @@
         padding-top: 0;
         order: 2;
         width: 175px;
+        margin-top: 10px;
 
         img {
             max-width: 100%;
@@ -89,7 +90,6 @@ html[dir="ltr"] .logo {
     justify-content: flex-end;
     margin-top: 44px;
     margin-bottom: 19px;
-    overflow-x: hidden;
 
     @media (max-width:1199px) {
         margin-top: 0;
@@ -131,17 +131,17 @@ html[dir="ltr"] .mo-user-nav {
 
     &.mo-user {
         display: none;
-        border: 1px solid transparent;
-        color: $seccolor;
-        background-color: #fff;
+        border: 1px solid #4587c4;
+        color: #fff;
+        background-color: transparent;
         position: relative;
         margin: 0 8px;
         @include transition(all 0.3s ease-in-out);
 
         &:hover {
-            border: 1px solid #4587c4;
-            color: #fff;
-            background-color: transparent;
+            border: 1px solid transparent;
+            color: $seccolor;
+            background-color: #fff;
         }
 
         @media (max-width:991px) {
