@@ -13,11 +13,12 @@
 
     @media (max-width:1199px) {
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     @media (max-width:991px) {
         padding: 0;
+        padding-bottom: 20px;
     }
 }
 
@@ -34,6 +35,11 @@
         position: static;
         padding-top: 0;
         order: 2;
+        width: 175px;
+
+        img {
+            max-width: 100%;
+        }
     }
 }
 
@@ -102,7 +108,6 @@ html[dir="ltr"] .logo {
 
     @media (max-width:991px) {
         margin: 0;
-        flex-direction: column;
     }
 }
 
@@ -141,8 +146,6 @@ html[dir="ltr"] .mo-user-nav {
 
         @media (max-width:991px) {
             display: flex;
-            margin-bottom: 8px;
-            order: 3;
         }
     }
 
@@ -161,12 +164,7 @@ html[dir="ltr"] .mo-user-nav {
 
         @media (max-width:991px) {
             display: flex;
-            order: 2;
         }
-    }
-
-    @media (max-width:991px) {
-        margin-bottom: 8px;
     }
 
     &.search-icon {
@@ -174,6 +172,7 @@ html[dir="ltr"] .mo-user-nav {
         color: #fff;
         background-color: transparent;
         @include transition(all 0.3s ease-in-out);
+        z-index: 7;
 
         &:hover {
             border: 1px solid transparent;
@@ -183,7 +182,7 @@ html[dir="ltr"] .mo-user-nav {
 
         @media (max-width:991px) {
             margin-bottom: 0;
-            order: 4;
+            z-index: 5;
         }
     }
 
@@ -204,12 +203,6 @@ html[dir="ltr"] .mo-user-nav {
                 animation: vibe 0.7s
             }
         }
-
-        @media (max-width:991px) {
-            margin-right: 0;
-            margin-left: 0;
-            order: 1;
-        }
     }
 
     .items {
@@ -229,6 +222,14 @@ html[dir="ltr"] .mo-user-nav {
 }
 
 html[dir="ltr"] .user-anchor {
+    &.search-icon {
+        @media (max-width:991px) {
+            margin-bottom: 0;
+            z-index: 5;
+            margin-right: 8px;
+        }
+    }
+
     &.mo-cart-icon {
         margin-right: 0;
         margin-left: 8px;
